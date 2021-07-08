@@ -24,8 +24,13 @@ public class StudentConfig {
                     "john@server.com",
                     LocalDate.of(2008, Month.AUGUST, 14)
             );
+            var hasan = new Student(
+                    "hasan",
+                    "hasan@server.com",
+                    LocalDate.of(2003, Month.AUGUST, 22)
+            );
 
-            repository.saveAll(List.of(alex, john));
+            repository.saveAll(List.of(alex, john, hasan));
         };
     }
 }
